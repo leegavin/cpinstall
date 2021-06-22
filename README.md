@@ -1,17 +1,18 @@
 # cpinstall
 
-Cloud Pak Install - devcluster
-Base namespace = cloudpak
-My Entitlement Key:
+Cloud Pak Install - devcluster-lon02
 
-eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJJQk0gTWFya2V0cGxhY2UiLCJpYXQiOjE1NzM1NzcyODYsImp0aSI6ImM1NjdmZjUzNzQ2OTRlODk4YzBhOGMzOWI5MjdkZWY0In0.E7hwmyrjOI-bQ2RIdiFdtfKX57f1BDobe_MDDHMq9nM
+Base namespace for PN  - cp4i
 
 
 Operators (cluster scoped / manual upgrade)
-1.
-2.
-3.
+1.Common Service (Foundational Services) operator into common-service an dall the other crap
+2. PN
 
-Entitlement Key Secrets:
+Entitlement Key Secrets created:
 
-1. cloudpak
+1. cp4i
+
+Operands Created
+1. All the other foundational crap
+2. PN
