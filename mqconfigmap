@@ -1,0 +1,33 @@
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: mq-configmap
+  namespace: integration
+  selfLink: /api/v1/namespaces/integration/configmaps/mq-configmap
+  uid: d9280c8a-2267-47b6-8b0e-5bf052ad5e27
+  resourceVersion: '12697741'
+  creationTimestamp: '2021-04-15T12:25:48Z'
+  managedFields:
+    - manager: Mozilla
+      operation: Update
+      apiVersion: v1
+      time: '2021-04-15T12:25:48Z'
+      fieldsType: FieldsV1
+      fieldsV1:
+        'f:data':
+          .: {}
+          'f:example.ini': {}
+          'f:example1.mqsc': {}
+data:
+  mq.ini: |
+    SSL:
+    OutboundSNI=HOSTNAME
+  mq.mqsc: |   
+  ALTER QMGR CONNAUTH('') CHLAUTH(DISABLED)
+  DEF QL('NHSHL7.DATASTAGE') MAXDEPTH(100000) DEFPSIST(YES) REPLACE
+  DEF QL('NHSHL7.SRC') MAXDEPTH(100000) DEFPSIST(YES) REPLACE
+  DEF QL('NHSHL7.DEST1') MAXDEPTH(100000) DEFPSIST(YES) REPLACE
+  DEF QL('NHSHL7.ERR') MAXDEPTH(100000) DEFPSIST(YES) REPLACE
+  DEF QL('NHSHL7.SEQNOS') DEFPSIST(YES) REPLACE
+  DEF QL('NHSHL7.SEQNTFY') DEFPSIST(YES) REPLACE
+  DEF QL('NHSHL7.RXF1') MAXDEPTH(100000) DEFPSIST(YES) REPLACE
