@@ -1,18 +1,13 @@
 # cpinstall
 
-Cloud Pak Install - devcluster-lon02
+Cloud Pak Install - devcluster-lon04
+One Click Install - trying openshift-operators ns - NBG still nnot cluster scoped
+One Click Install - cp4i
 
-Base namespace for PN  - cp4i
 
 
-Operators (cluster scoped / manual upgrade)
-1.Common Service (Foundational Services) operator into common-service an dall the other crap
-2. PN
 
-Entitlement Key Secrets created:
 
-1. cp4i
-
-Operands Created
-1. All the other foundational crap
-2. PN
+at v11.0.0.11 needs lots more memory for hl7 libs
+cpu = ok
+memory = 
