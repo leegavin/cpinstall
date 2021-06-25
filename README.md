@@ -54,8 +54,19 @@ add supplmental group
 
 SYSTEM.DEF.SVRCONN  = mqm mcauser and tls optional
 
-*add nodeport on ace deploy*
-create hl7
+**hl7-ingest**
+
+**remember to compile bar**
+
+**add nodeport on ace deploy**
+
+**add remote qmgr server conf on ace deploy**
+
+**increase resources on ace deploy**
+
+
+
+
 
 
 
