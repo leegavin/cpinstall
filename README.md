@@ -44,9 +44,18 @@ test queue -
 
 Failed to make a client connection to queue manager 'QMSINGLE' using hostname 'qmsingle-ibm-mq.mq.svc' on port '443': MQCC=2; MQRC=2538.
 
-service and 1414 with SSL optional on SYSTEM.DEF.SVRCONN - YES !!!!!!!!
+**service and 1414 with SSL optional on SYSTEM.DEF.SVRCONN - for MQEndpoint policy **
 
 
+**hl7qmgr**
+add ini and mqsc
+add tls
+add supplmental group
+
+SYSTEM.DEF.SVRCONN  = mqm mcauser and tls optional
+
+*add nodeport on ace deploy*
+create hl7
 
 
 
