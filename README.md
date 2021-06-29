@@ -39,10 +39,8 @@ create entitlement secret
 
 deploy ace dashboard (v12)
 ping api v12 - ok
-test parse - HUGE memory
+test parse - HUGE memory - add 1 to front of everything
 test queue - 
-
-Failed to make a client connection to queue manager 'QMSINGLE' using hostname 'qmsingle-ibm-mq.mq.svc' on port '443': MQCC=2; MQRC=2538.
 
 **service and 1414 with SSL optional on SYSTEM.DEF.SVRCONN - for MQEndpoint policy **
 
@@ -76,8 +74,6 @@ SYSTEM.DEF.SVRCONN  = mqm mcauser and tls optional
 
 
 
-1.
-ACE  = 11.0.011 = svc:443 / SYSTEM.DEF.SVRCONN / no ssl
-MQ = mqm / SSL auth optional / no cipher
+
 
 
