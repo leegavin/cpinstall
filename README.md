@@ -58,9 +58,17 @@ SYSTEM.DEF.SVRCONN  = mqm mcauser and tls optional
 
 **add nodeport on ace deploy**
 
-**add remote qmgr server conf on ace deploy**
+**add remote qmgr server conf on ace deploy** 31111
+
+route name = hl7-ingest-hl7 - pointing to hl7 port.
+
+address on route: hl7-ingest-hl7-ace.lon06dev-5ea9e8378e96c3c98ca588682ecb5d03-0000.eu-gb.containers.appdomain.cloud
 
 **increase resources on ace deploy**
+
+address for hl7 tester:
+
+hl7-ingest-hl7-ace.lon06dev-5ea9e8378e96c3c98ca588682ecb5d03-0000.eu-gb.containers.appdomain.cloud:31111
 
 
 
