@@ -56,9 +56,9 @@ SYSTEM.DEF.SVRCONN  = mqm mcauser and tls optional
 
 **remember to compile bar**
 
-**add nodeport on ace deploy**
+**add nodeport on ace deploy** 31111
 
-**add remote qmgr server conf on ace deploy** 31111
+**add remote qmgr server conf on ace deploy** 
 
 route name = hl7-ingest-hl7 - pointing to hl7 port.
 
