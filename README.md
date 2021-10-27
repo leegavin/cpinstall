@@ -48,7 +48,10 @@ test queue -
 **hl7qmgr**
 add ini and mqsc
 add tls
-add supplmental group
+add supplmental group 
+
+securityContext:
+     supplementalGroups: [99]
 
 SYSTEM.DEF.SVRCONN  = mqm mcauser and tls optional
 
