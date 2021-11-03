@@ -11,7 +11,7 @@ entitlement secret created
 add ibm catalog
 
 install plattform navigator - all namespaces / automatic update (use file bronze gid because of foundation cartridge)\
-** 2021.3 - tried gold gid **
+**2021.3 - tried gold gid**
 
 add mq operator - all namespaces / auto
 
