@@ -2,7 +2,8 @@
 
 Cloud Pak Install - lon06dev
 
-ROKS - 4.7
+ROKS - 4.7\
+**2021.3 4.8**
 
 cp4i - cloudpak namespace
 
@@ -73,19 +74,3 @@ address on route: hl7-ingest-hl7-ace.lon06dev-5ea9e8378e96c3c98ca588682ecb5d03-0
 address for hl7 tester:
 
 hl7-ingest-hl7-ace.lon06dev-5ea9e8378e96c3c98ca588682ecb5d03-0000.eu-gb.containers.appdomain.cloud:31111
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
