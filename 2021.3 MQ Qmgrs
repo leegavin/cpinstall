@@ -1,0 +1,7 @@
+
+QMSINGLE
+Single resilient
+Persistent storage - file gold gid (add supplmental group 99)
+tls.key and tls.crt from mq-tls-secret
+mq.ini and mq.mqsc from mq-configmap
+
