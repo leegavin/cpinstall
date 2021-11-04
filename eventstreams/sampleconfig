@@ -1,0 +1,14 @@
+bootstrap.servers=<kafka_bootstrap_address>
+# SCRAM Properties
+#security.protocol=SASL_SSL
+#sasl.mechanism=SCRAM-SHA-512
+#sasl.jaas.config=org.apache.kafka.common.security.scram.ScramLoginModule required username="<token>" password="<password>";
+# Mutual auth properties
+#security.protocol=SSL
+#ssl.keystore.location=<java_keystore_file_location>
+#ssl.keystore.password=<java_keystore_password>
+# TLS Properties
+ssl.protocol=TLSv1.2
+ssl.truststore.location=<java_truststore_file_location>
+ssl.truststore.password=<java_truststore_password>
+ssl.truststore.type=PKCS12
