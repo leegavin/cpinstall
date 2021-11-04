@@ -1,0 +1,2 @@
+oc new-project instana-agent\
+oc adm policy add-scc-to-user privileged -z instana-agent\
