@@ -22,7 +22,7 @@ add mq tls secrets for single and ha
 
 create config map for ini and mqsc
 
-create qmsingle (QMSINGLE)
+create qmsingle (QMSINGLE)\
 **2021.3 use block gold**
 
 LEE channel with TLS on as optional and ANY_TLS12
