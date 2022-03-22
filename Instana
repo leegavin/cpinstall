@@ -1,2 +1,25 @@
 oc new-project instana-agent\
 oc adm policy add-scc-to-user privileged -z instana-agent\
+
+
+
+
+apiVersion: instana.io/v1
+kind: InstanaAgent
+metadata:
+  name: instana-agent
+  namespace: instana-agent
+spec:
+  zone:
+    name: lg-cp4i
+  cluster:
+    name: lgcluster
+  agent:
+    key: qUMhYJxjSv6uZh2SyqTEnw
+    endpointHost: ingress-orange-saas.instana.io 
+    endpointPort: "443" 
+    env:
+      INSTANA_AGENT_TAGS: example
+    configuration_yaml: |
+      # You can leave this empty, or use this to configure your instana agent.
+      # See https://docs.instana.io/setup_and_manage/host_agent/on/kubernetes/
