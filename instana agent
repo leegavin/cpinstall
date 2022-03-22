@@ -1,0 +1,9 @@
+com.instana.plugin.ibmmq:
+  enabled: true
+  poll_rate: 5
+  queueManagers:
+    qm1:
+      host: '127.0.0.1'
+      port: '1414'
+      channel: 'INSTANA.SVRCONN' # Remote administration channel
+      queuesRegex: '^(?!SYSTEM|AMQ).*$' # Optional regex for filtering queues
