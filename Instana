@@ -3,6 +3,7 @@ oc adm policy add-scc-to-user privileged -z instana-agent\
 
 
 
+AGENT\
 
 apiVersion: instana.io/v1
 kind: InstanaAgent
@@ -11,20 +12,30 @@ metadata:
   namespace: instana-agent
 spec:
   zone:
-    name: lg-cp4i
+    name: lgcluster-cp4i # (optional) name of the zone of the host
   cluster:
-    name: lgcluster
+      name: lgcluster-cp4i
   agent:
-    key: qUMhYJxjSv6uZh2SyqTEnw
-    endpointHost: ingress-orange-saas.instana.io 
-    endpointPort: "443" 
-    env:
-      INSTANA_AGENT_TAGS: example
+    key: uBp4GXpZQpKrHxMXNcvInQ # replace with your Instana agent key
+    endpointHost: ingress-orange-saas.instana.io
+    endpointPort: "443"
+    env: {}
     configuration_yaml: |
       # You can leave this empty, or use this to configure your instana agent.
       # See https://docs.instana.io/setup_and_manage/host_agent/on/kubernetes/
       
       
       
-      regex for queue filter
-      queuesRegex: '^(?!SYSTEM|AMQ).*$' # Optional regex for filtering queues
+
+
+
+MQ\
+
+com.instana.plugin.ibmmq:
+   enabled: true
+   poll_rate: 10
+   queueManagers:
+      qm1:    # Your Queue Manager name here
+         channel: 'INSTANA.SVRCONN' # Server connection channel
+         queuesRegex: '^(?!SYSTEM|AMQ).*$' # Optional regex for filtering queues
+         poll_rate: 10 # Metrics poll rate in seconds (optional)
