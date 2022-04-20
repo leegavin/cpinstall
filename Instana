@@ -3,7 +3,7 @@ oc adm policy add-scc-to-user privileged -z instana-agent\
 
 
 
-AGENT\
+**AGENT**
 
 apiVersion: instana.io/v1
 kind: InstanaAgent
@@ -29,7 +29,7 @@ spec:
 
 
 
-MQ\
+**MQ**
 
 com.instana.plugin.ibmmq:
    enabled: true
