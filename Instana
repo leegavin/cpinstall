@@ -28,29 +28,3 @@ spec:
       
 
 
-
-** MQ Config **
-
-com.instana.plugin.ibmmq:
-   enabled: true
-   poll_rate: 10
-   queueManagers:
-      qm1:    # Your Queue Manager name here
-         channel: 'INSTANA.SVRCONN' # Server connection channel
-         queuesRegex: '^(?!SYSTEM|AMQ).*$' # Optional regex for filtering queues
-         poll_rate: 10 # Metrics poll rate in seconds (optional)
-         
-         
-         
-         
-         
-   configuration.yaml: |
-    com.instana.plugin.ibmmq:
-      enabled: true
-      poll_rate: 60
-      queueManagers:
-        demomqm:
-          channel: 'CL.ACE'
-          port: '1414'
-          queuesRegex: '.*'
-          poll_rate: 60        
